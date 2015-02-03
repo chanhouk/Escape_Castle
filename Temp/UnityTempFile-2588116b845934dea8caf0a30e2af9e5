@@ -1,0 +1,103 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-define:UNITY_4_6_0
+-define:UNITY_4_6
+-define:UNITY_ANDROID
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_NEW_HIERARCHY 
+-define:ENABLE_AUDIO_FMOD
+-define:ENABLE_MONO
+-define:ENABLE_TERRAIN
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_4_6_FEATURES
+-define:INCLUDE_WP_BLUE_SUPPORT
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:UNITY_ANDROID_API
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+'Assets/Cha_Data/Script/ScreenShot.cs'
+'Assets/Custom scripts/CameraHide.cs'
+'Assets/Custom scripts/CustomCharacterController.cs'
+'Assets/Custom scripts/DeadTriggerLife.cs'
+'Assets/Custom scripts/DisplayMap.cs'
+'Assets/Custom scripts/FireLightEffect.cs'
+'Assets/Custom scripts/GameManager.cs'
+'Assets/Custom scripts/GridFallPlatform.cs'
+'Assets/Custom scripts/HideObjects.cs'
+'Assets/Custom scripts/ITouchable3D.cs'
+'Assets/Custom scripts/InGamePauseMenu.cs'
+'Assets/Custom scripts/JoyStick.cs'
+'Assets/Custom scripts/LifeManager.cs'
+'Assets/Custom scripts/MouseDown.cs'
+'Assets/Custom scripts/NextLevelTrigger.cs'
+'Assets/Custom scripts/ObjectRotate.cs'
+'Assets/Custom scripts/RayBetweenMainCameraAndPlayer.cs'
+'Assets/Custom scripts/SceneFadeInOut.cs'
+'Assets/Custom scripts/ThirdPersonController.cs'
+'Assets/Custom scripts/TouchLogic.cs'
+'Assets/Custom scripts/TouchLogic3D.cs'
+'Assets/Custom scripts/TouchLogicV2.cs'
+'Assets/Custom scripts/Trigger_Active.cs'
+'Assets/Custom scripts/Trigger_Hit.cs'
+'Assets/Custom scripts/UIInput.cs'
+'Assets/Custom scripts/UpAndDown.cs'
+'Assets/Custom scripts/WebCamTextureTest.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundAutoRotate.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundCycleSnapshots.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundEventListener.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundInk.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundLogoExample.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundManipulatorStrength.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundRotateWithKeys.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Scene Scripts/PlaygroundScenes.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EmitAtMousePosition.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EmitByAmountC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EmitFromTransformsC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EmitOnOffByDistanceC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EmitOnOffOnClickC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EnableDisableByDistanceC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/EnableDisableOnClickC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/KillParticleWithinEventRangeC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/ManipulatorContainsParticlesC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/PaintAtMousePositionC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/ParticleEventListenerC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/PauseCalculationByDistanceAngleC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/SpawnPrefabOnClickC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/SwitchCachedParticleSystemC.cs'
+'Assets/Particle Playground/Examples/Example Scripts/Simple Scripts/SwitchCachedWorldObjectsC.cs'
+'Assets/Particle Playground/Playground Assets/Scripts/PlaygroundSineOverflow.cs'
+'Assets/Particle Playground/Playground Assets/Scripts/PlaygroundSineRotation.cs'
+'Assets/Particle Playground/Scripts/PlaygroundC.cs'
+'Assets/Particle Playground/Scripts/PlaygroundParticlesC.cs'
+'Assets/Particle Playground/Scripts/Presets/PlaygroundBrushPresetC.cs'
+'Assets/Particle Playground/Scripts/Presets/PlaygroundPresetCircleShotC.cs'
+'Assets/Particle Playground/Scripts/Presets/PlaygroundPresetLaserC.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

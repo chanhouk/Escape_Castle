@@ -5993,7 +5993,7 @@ Camera:
   m_GameObject: {fileID: 1192013873}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -6010,7 +6010,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967263
-  m_RenderingPath: -1
+  m_RenderingPath: 0
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_HDR: 1
@@ -8783,7 +8783,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 64fec90c6aeae42b1b596ede6f9f7353, type: 2}
       propertyPath: m_ClearFlags
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 64fec90c6aeae42b1b596ede6f9f7353, type: 2}
       propertyPath: m_NormalizedViewPortRect.x
@@ -8796,6 +8796,10 @@ Prefab:
     - target: {fileID: 2000000, guid: 64fec90c6aeae42b1b596ede6f9f7353, type: 2}
       propertyPath: m_HDR
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 64fec90c6aeae42b1b596ede6f9f7353, type: 2}
+      propertyPath: m_RenderingPath
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64fec90c6aeae42b1b596ede6f9f7353, type: 2}
