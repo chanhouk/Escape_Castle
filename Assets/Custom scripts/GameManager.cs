@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 		playerLife = PlayerPrefs.GetInt ("playerLifes");
 		hasWeapon = PlayerPrefs.GetInt ("hasWeapon");
 		health = 1f;
+		print (Application.loadedLevelName);
 	}
 
 	void Awake() {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(PlayerPrefs.GetInt("playerLifes") < 0){
-			Application.LoadLevel("00");
+			Application.LoadLevel("MainMenu");
 		}
 		if(Application.loadedLevel != 0){
 			myImage.fillAmount = health;
@@ -46,11 +47,20 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void NewGame(){
-		Application.LoadLevel ("01");
+		// To check if the player has complete the tutorial before if yes skip tutorial
+		if(PlayerPrefs.GetInt("tutorialComplete") == 0){
+			Application.LoadLevel("Tutorial - test");
+		}else{
+			Application.LoadLevel ("01");
+		}
 	}
 
 	public void Level(){
-		Application.LoadLevel ("99");
+		Application.LoadLevel ("LevelSelect");
+	}
+
+	public void Tutorial(){
+		Application.LoadLevel ("CharaterEditScene");
 	}
 
 	public void Quit(){
@@ -69,5 +79,9 @@ public class GameManager : MonoBehaviour {
 	}
 	public void healthRemove(float hit){
 		health -= hit;
+	}
+
+	public void LoadLevel(string level){
+		Application.LoadLevel (level);
 	}
 }

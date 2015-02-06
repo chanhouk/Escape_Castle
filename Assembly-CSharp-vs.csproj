@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Cha_Data\Script\ScreenShot.cs" />
      <Compile Include="Assets\Custom scripts\CameraHide.cs" />
+     <Compile Include="Assets\Custom scripts\CompleteTut.cs" />
      <Compile Include="Assets\Custom scripts\CustomCharacterController.cs" />
      <Compile Include="Assets\Custom scripts\DeadTriggerLife.cs" />
      <Compile Include="Assets\Custom scripts\DisplayMap.cs" />
@@ -58,12 +59,15 @@
      <Compile Include="Assets\Custom scripts\ITouchable3D.cs" />
      <Compile Include="Assets\Custom scripts\InGamePauseMenu.cs" />
      <Compile Include="Assets\Custom scripts\JoyStick.cs" />
+     <Compile Include="Assets\Custom scripts\JoyStick2.cs" />
+     <Compile Include="Assets\Custom scripts\JumpToWayPoint.cs" />
      <Compile Include="Assets\Custom scripts\LifeManager.cs" />
      <Compile Include="Assets\Custom scripts\MouseDown.cs" />
      <Compile Include="Assets\Custom scripts\NextLevelTrigger.cs" />
      <Compile Include="Assets\Custom scripts\ObjectRotate.cs" />
      <Compile Include="Assets\Custom scripts\RayBetweenMainCameraAndPlayer.cs" />
      <Compile Include="Assets\Custom scripts\SceneFadeInOut.cs" />
+     <Compile Include="Assets\Custom scripts\SlopeForce.cs" />
      <Compile Include="Assets\Custom scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Custom scripts\TouchLogic.cs" />
      <Compile Include="Assets\Custom scripts\TouchLogic3D.cs" />
@@ -103,6 +107,8 @@
      <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundBrushPresetC.cs" />
      <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundPresetCircleShotC.cs" />
      <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundPresetLaserC.cs" />
+     <Compile Include="Assets\detectGround.cs" />
+     <Compile Include="Assets\testController.cs" />
      <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

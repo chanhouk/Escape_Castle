@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 131: {fileID: 13100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 5
   m_Name: JoyStick
   m_TagString: Untagged
@@ -35,13 +36,30 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f2b4531dc9ea4f0bb22843e95115840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   touch2Watch: 64
   joystickType: 0
+  player: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306bf2793ad2641e0a10227d44cf4f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touch2Watch: 64
+  joystickType: 0
+  player: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

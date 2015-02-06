@@ -16,15 +16,18 @@ public class CustomCharacterController : MonoBehaviour {
 	public float v;
 	public float h;
 
-	private float moveSpeed, rotateSpeed, jumpVelocity = 3.5f;
-	private Transform myTrans,tagGround;
-	private Rigidbody myBody;
+	private float moveSpeed, rotateSpeed, jumpVelocity;
+	private Transform myTrans;
+	public Rigidbody myBody;
 
 	private Vector3 eulerAngleVelocity = new Vector3(0, 100, 0);
+	private Vector3 currectVelocity;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+
+//		myBody = GameObject.Find ("Cha_Knight 1/Group Locator/Root/Skeleton_Root").transform.rigidbody;
 		myBody = this.rigidbody;
 		myTrans = this.transform;
 	}
@@ -37,24 +40,28 @@ public class CustomCharacterController : MonoBehaviour {
 //		forward= cameraTransform.TransformDirection(Vector3.forward);
 //		forward.y = 0;
 //		forward = forward.normalized;
+		currectVelocity = myBody.velocity;
 	}
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.transform.tag == "Ground") {
 			isGround = true;
+			anim.SetBool("isGrounded",true);
 		}
 	}
 	void OnCollisionExit(Collision collision) {
 		if (collision.transform.tag == "Ground") {
 			isGround = false;
+			anim.SetBool("isGrounded",false);
 		}
 	}
 
-	void OnCollisionStay(Collision collision){
-		if (collision.transform.tag == "Ground") {
-			isGround = true;
-		}
-	}
+//	void OnCollisionStay(Collision collision){
+//		if (collision.transform.tag == "Ground") {
+//			isGround = true;
+//			anim.SetBool("isGrounded",true);
+//		}
+//	}
 
 	void FixedUpdate(){
 		move ();
@@ -91,40 +98,50 @@ public class CustomCharacterController : MonoBehaviour {
 //			rotateSpeed = 0.05f;
 //		}
 
-		if(running && v > 0.4f){
-			if(isGround){
-//				jumpVelocity = 5;
-				anim.SetBool("Run",true);
-//				moveSpeed = 0.2f;
-				moveSpeed = 3.0f;
-				rotateSpeed = 0.2f;
-			}
-		}else{
-			jumpVelocity = 3.5f;
-			anim.SetBool("Run",false);
-//			moveSpeed =  0.05f;
-			moveSpeed = 1.5f;
-			rotateSpeed = 0.05f;
-		}
+//		if(running && v > 0.4f){
+//			print ("running && v > 0.4f");
+//			if(isGround){
+//				print ("isGround");
+////				jumpVelocity = 5;
+//				anim.SetBool("Run",true);
+////				moveSpeed = 0.2f;
+//				moveSpeed = 3.0f;
+//				rotateSpeed = 0.2f;
+//			}
+//		}else{
+//			print ("else");
+////			jumpVelocity = 3.5f;
+//			anim.SetBool("Run",false);
+////			moveSpeed =  0.05f;
+//			moveSpeed = 1.5f;
+//			rotateSpeed = 0.05f;
+//		}
+
+		moveSpeed = 3.0f;
+		rotateSpeed = 0.2f;
+		jumpVelocity = 5;
 		
 		if(v > 0.4){
 			canJump = true;
-//			transform.position += transform.TransformDirection(Vector3.forward) * moveSpeed;
 			if(isGround){
 				// Walk animation don't have a build in velocity, I have to add velocity to the body for it to mvoe forward
 				myBody.velocity = moveSpeed * transform.forward;
+//				transform.position += transform.TransformDirection(Vector3.forward) * 0.1f;
 				anim.SetFloat("Speed",v);
+				anim.SetBool("Run",true);
 			}
 		}else if(v < -0.4){
 			canJump = false;
-//			transform.position += transform.TransformDirection(Vector3.back) * moveSpeed;
 			if(isGround){
 				myBody.velocity = moveSpeed * -transform.forward;
+//				transform.position += transform.TransformDirection(Vector3.back) * 0.02f;
 				anim.SetFloat("Speed",-v);
+				anim.SetBool("Run",false);
 			}
 		}else{
 			canJump = true;
 			anim.SetFloat("Speed",0);
+			anim.SetBool("Run",false);
 		}
 		if(isGround){
 			if(h > 0.2){
@@ -143,10 +160,29 @@ public class CustomCharacterController : MonoBehaviour {
 
 	public void jump(){
 //		print ("In jump script");
+		// isGround to make sure player is touch ground
+		// canJump to make sure player only can jump while not moving backward
 		if (isGround && canJump){
-//			print ("Jumping");
+//			if(v > 0){
+//				print ("jump run");
+////				float tempX = myBody.velocity.x;
+////				float tempZ = myBody.velocity.z;
+////				myBody.velocity = new Vector3(tempX,5,tempZ);
+//				print (myBody.velocity);
+//				myBody.velocity = myBody.velocity + new Vector3(0, 5f, 0);
+//				print (myBody.velocity);
+//			}else{
+//				print ("stay jump");
+//				myBody.velocity = jumpVelocity * Vector3.up;
+//			}
+			print (myBody.velocity);
 			anim.SetTrigger ("Jump");
-			myBody.velocity = jumpVelocity * Vector3.up;
+			myBody.velocity = myBody.velocity + new Vector3(0, 2f, 0);
+			print (myBody.velocity);
+
+//			anim.SetTrigger ("Jump");
+//			myBody.velocity.y = jumpVelocity * Vector3.up;
+//			myBody.velocity = jumpVelocity * Vector3.up;
 		}
 	}
 

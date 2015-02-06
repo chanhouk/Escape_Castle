@@ -6,10 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Custom_Scenes/00.unity
+    path: Assets/Custom_Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Custom_Scenes/01.unity
+    path: Assets/Custom_Scenes/CharaterEditScene.unity
   - enabled: 1
-    path: Assets/Custom_Scenes/02.unity
+    path: Assets/Custom_Scenes/LevelSelect.unity
   - enabled: 1
-    path: Assets/Custom_Scenes/03.unity
+    path: Assets/Custom_Scenes/Tutorial - 0.unity
+  - enabled: 1
+    path: Assets/Custom_Scenes/Tutorial - test.unity
+  - enabled: 1
+    path: Assets/Custom_Scenes/Old/01.unity
+  - enabled: 1
+    path: Assets/Custom_Scenes/Old/02.unity
+  - enabled: 1
+    path: Assets/Custom_Scenes/Old/03.unity

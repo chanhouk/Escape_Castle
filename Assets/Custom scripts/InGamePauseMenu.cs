@@ -36,7 +36,8 @@ public class InGamePauseMenu : MonoBehaviour {
 
 	public void BackToMainMenu(){
 		Time.timeScale = 1;
-		Application.LoadLevel ("00");
+		Application.LoadLevel ("MainMenu");
+//		Application.LoadLevel ("00");
 	}
 
 	public void ResumeGame(){

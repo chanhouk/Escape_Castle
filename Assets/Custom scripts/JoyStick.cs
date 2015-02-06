@@ -5,7 +5,7 @@ public class JoyStick : TouchLogicV2//NOTE: This script has been updated to V2 a
 {
 	public enum JoystickType {Movement, LookRotation, SkyColor};
 	public JoystickType joystickType;
-	private GameObject player = null;
+	public GameObject player = null;
 	private float playerSpeed = 1.5f, maxJoyDelta = 0.1f;//, rotateSpeed = 100.0f;
 	private Vector3 oJoyPos, joyDelta;
 	private Transform joyTrans = null;
@@ -13,7 +13,7 @@ public class JoyStick : TouchLogicV2//NOTE: This script has been updated to V2 a
 	//cache initial rotation of player so pitch and yaw don't reset to 0 before rotating
 //	private Vector3 oRotation;
 	private Vector3 eulerAngleVelocity = new Vector3(0, 50, 0);
-	private Animator anim;
+	public Animator anim;
 
 	void Start ()
 	{

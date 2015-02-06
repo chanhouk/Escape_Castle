@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Custom scripts/DisplayMap.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/testController.cs">
     <Files>
-      <File FileName="Assets/Custom scripts/DisplayMap.cs" Line="8" Column="17" />
+      <File FileName="Assets/testController.cs" Line="62" Column="91" />
+      <File FileName="Assets/Custom scripts/JoyStick2.cs" Line="106" Column="25" />
+      <File FileName="Assets/Custom scripts/JumpToWayPoint.cs" Line="12" Column="3" />
+      <File FileName="Assets/Custom scripts/SlopeForce.cs" Line="8" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

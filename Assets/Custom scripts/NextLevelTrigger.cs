@@ -22,7 +22,7 @@ public class NextLevelTrigger : MonoBehaviour {
 			if(Application.loadedLevel < Application.levelCount-1){
 				Application.LoadLevel(Application.loadedLevel+1);
 			}else{
-				Application.LoadLevel("00");
+				Application.LoadLevel("MainMenu");
 			}
 		}
 	}

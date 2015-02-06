@@ -16,7 +16,7 @@ public class HideObjects : MonoBehaviour {
 	private Dictionary<Transform, Material> _LastTransforms;
 	
 	void Start () {
-		WatchTarget = GameObject.Find("Cha_Knight 1").transform;
+		WatchTarget = GameObject.Find("Cha_Knight 1/CameraTarget").transform;
 		_LastTransforms = new Dictionary<Transform, Material>();
 	}
 	
